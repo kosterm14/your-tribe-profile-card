@@ -4,6 +4,7 @@
 
 html {
   height:100vh;
+  background-image: linear-gradient(0deg, white, #4e54c8);
 }
 
 body {
@@ -24,7 +25,7 @@ body {
   align-items:left;
   justify-content:flex-end;
   background: rgb(140, 191, 253);
-  background: linear-gradient(0deg, #4e54c8 100%, #4e54c8 100%);
+  background: linear-gradient(0deg, #000000 100%, #000000 100%);
   box-shadow:0 0 20px 20px rgba(0,0,0,.1);
   border-radius:1rem;
   position: relative;
@@ -35,11 +36,12 @@ body {
 
 }
 
+
 article main {
   background: rgb(255, 255, 255);
   transition:.25s;
   height: 260px;
-}
+} 
 
 header {
   display:flex;
@@ -51,7 +53,7 @@ header {
 
 h1 {
   margin:2rem 0 1rem;
-  color: rgba(0,239,255,1);
+  color: #4e54c8;
   padding-left: 180px;
   transition:.25s .15s;
 }
@@ -59,33 +61,33 @@ h1 {
 button {
   border:none;
   position: absolute;
-  right:1rem;
-  top:1rem;
+  right:8rem;
+  bottom:5rem;
   width:2.5rem;
   height:2.5rem;
   transform: scale(.8);
-  background: rgba(0,239,255,1);
+  /* background: #4e54c8; */
   border-radius:50%;
   padding:.25rem;
   transition:.25s;
 }
 
-button:focus {
+/* button:focus {
   outline:none;
-  background:#202592;
-}
+  background:#000000;
+} */
 
-button:focus svg {
-  stroke: rgba(0,239,255,1);
-}
-
-svg {
+/* button:focus svg {
   stroke: #4e54c8;
+} */
+
+/* svg {
+  stroke: #000000;
   position: absolute;
   top:calc(1.25rem - 12px);
   left:calc(1.25rem - 12px);
   transition-delay: .25s;
-}
+} */
 
 button svg:nth-of-type(2) {
   opacity:0;
@@ -96,7 +98,7 @@ img {
   width:8em;
   border-radius:10em;
   border:5px transparent;
-  box-shadow:0 0 2px 2px rgba(0,0,0,.2);
+  /* box-shadow:0 0 2px 2px rgba(0,0,0,.2); */
   position:relative;
   top: 10px;
   left: 10px;
@@ -131,6 +133,8 @@ body.expand section {
   padding-top: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  font-family: open sans;
+ 
 }
 
 body.expand img {
@@ -141,13 +145,13 @@ body.expand img {
   position:relative;
   top:10px;
   left: 135px;
-  border:1px solid #00efff;
+  border:2px solid #4e54c8;
   transition:.25s .15s;
 }
 
 body.expand h1 {
     margin:2rem 0 1rem;
-    color: rgb(0, 238, 255);
+    color: #4e54c8;
     padding-left: 125px;
     transition:.25s .15s;
 }
@@ -164,5 +168,19 @@ body.expand .line {
 }
 
 .line {
-  border-bottom: 5px solid #00efff;
+  border-bottom: 5px solid #4e54c8;
 }
+
+body.expand h2 {
+  font-size: 1.5em;
+  margin-right: 10px;
+  color: #4e54c8;
+}
+
+body.expand .pijl {
+  display: none;
+}
+
+/* svg {
+  display: none;
+} */
